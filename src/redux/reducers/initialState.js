@@ -2,7 +2,8 @@ const initialState = {
   currentCategory: {},
   categories: [],
   products: [],
-  cart: []
+  cart: [],
+  savedProduct:{}
 };
 
 export default initialState;
