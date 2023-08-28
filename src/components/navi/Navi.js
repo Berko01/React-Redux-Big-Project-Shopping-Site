@@ -10,6 +10,8 @@ import {
 
 import CartSummary from '../cart/CartSummary';
 
+import Link from 'react-router-dom/Link';
+
 export default class Navi extends React.Component {
   constructor(props) {
     super(props);
@@ -36,7 +38,7 @@ export default class Navi extends React.Component {
                 <NavLink href="/products">Products</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="https://github.com/reactstrap/reactstrap">GitHub</NavLink>
+                <NavLink href="/saveproduct">Add Product</NavLink>
               </NavItem>
               <CartSummary></CartSummary>
             </Nav>

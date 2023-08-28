@@ -12,9 +12,10 @@ export function updateProductSuccess(product) {
 }
 
 export function saveProductApi(product) {
+  console.log(product);
   return fetch("http://localhost:3000/products/" + (product.id || ""), {
-    method: product.id ? "POST" : "PUT",
-    headers: { "content-type": "application.json" },
+    method: product.id ? "PUT" : "POST",
+    headers: { "content-type": "application/json" },
     body: JSON.stringify(product), //stringe çevirdik
   })
     .then(handleResponse)
@@ -22,6 +23,7 @@ export function saveProductApi(product) {
 }
 
 export function saveProduct(product) {
+  console.log(product);
   return function (dispatch) {
     return saveProductApi(product)
       .then((savedProduct) => {
@@ -37,6 +39,7 @@ export function saveProduct(product) {
 
 export async function handleResponse(response) {
   if (response.ok) {
+    console.log(response.json)
     return response.json();
   }
   const error = await response.text();

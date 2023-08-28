@@ -10,7 +10,7 @@ import {
 import { bindActionCreators } from "redux";
 
 import * as cartActions from "../../redux/actions/cartActions";
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import alertify from "alertifyjs";
 
 class CartSummary extends Component {
@@ -29,7 +29,7 @@ class CartSummary extends Component {
 
             <DropdownItem divider />
             <DropdownItem>
-              <NavLink to={"/cart"}>Sepete Git</NavLink>
+              <Link to={"/cart"}>Sepete Git</Link>
             </DropdownItem>
           </DropdownMenu>
         </UncontrolledDropdown>
@@ -59,7 +59,7 @@ class CartSummary extends Component {
 
             <DropdownItem divider />
             <DropdownItem>
-              <NavLink to={"/cart"}>Sepete Git</NavLink>
+              <Link to={"/cart"}>Sepete Git</Link>
             </DropdownItem>
           </DropdownMenu>
         </UncontrolledDropdown>
