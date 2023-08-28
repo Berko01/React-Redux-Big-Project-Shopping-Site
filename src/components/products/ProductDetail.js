@@ -1,5 +1,5 @@
 import React from "react";
-import SelectInput from "../toolbox/SelectUnput";
+import SelectInput from "../toolbox/SelectInput";
 import TextInput from "../toolbox/TextInput";
 
 const ProductDetail = ({ categories, product, onSave, onChange ,errors}) => {
